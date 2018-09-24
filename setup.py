@@ -22,6 +22,11 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/silviogutierrez/django-react",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'mypy_extensions',
+        'simplejson',
+        'typing_extensions',
+    ],
     package_data={
         'reactivated': [
             'conf/mypy.ini',
