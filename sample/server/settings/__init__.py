@@ -1,3 +1,5 @@
 from .common import *
 
 DEBUG_PORT = 2000
+
+RUNSERVERPLUS_SERVER_ADDRESS_PORT = '0.0.0.0:%s' % DEBUG_PORT
