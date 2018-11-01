@@ -18,7 +18,11 @@ from django.urls import path
 
 from server.apps.samples import views as samples
 
+from server.apps.samples.forms import ContactForm1, ContactForm2
+from server.apps.samples.views import ContactWizard
+
 urlpatterns = [
+    path('contact/', ContactWizard.as_view([ContactForm1, ContactForm2])),
     path('test/', samples.test_view),
     path('admin/', admin.site.urls),
 ]

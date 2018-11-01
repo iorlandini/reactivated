@@ -1,2 +1,2 @@
-django_extensions==2.1.2
+django_extensions==2.1.0
 Werkzeug==0.14.1
